@@ -91,10 +91,10 @@ A. In case system is running low on memory, the system may purge suspended apps 
 A. On state transitions can be responded to state changes in an appropriate way by calling corresponding methods on app's delegate object.
 
 For example: 
-`applicationDidBecomeActive method can be used to prepare to run as the foreground app. 
-applicationDidEnterBackground method can be used to execute some code when app is running in the background and may be suspended at any time. 
-applicationWillEnterForeground method can be used to execute some code when your app is moving out of the background 
-applicationWillTerminate method is called when your app is being terminated.`
+`applicationDidBecomeActive` method can be used to prepare to run as the foreground app. 
+`applicationDidEnterBackground` method can be used to execute some code when app is running in the background and may be suspended at any time. 
+`applicationWillEnterForeground` method can be used to execute some code when your app is moving out of the background 
+`applicationWillTerminate` method is called when your app is being terminated.
 
 ####Q20. List down app's state transitions when it gets launched. 
 
