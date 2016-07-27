@@ -105,6 +105,66 @@ When an app is launched, it moves to the active or background state, after trans
 
 A. During app launching, the system creates a main thread for the app and calls the app’s main function on that main thread. The Xcode project's default main function hands over control to the UIKit framework, which takes care of initializing the app before it is run.
 
+###Core App Objects
+---
 
------
+####Q22. What is the use of controller object UIApplication?
+
+A. Controller object UIApplication is used without subclassing to manage the application event loop.
+It coordinates other high-level app behaviors. 
+It works along with the app delegate object which contains app-level logic.
+
+####Q23. Which object is create by UIApplicationMain function at app launch time?
+
+A. The app delegate object is created by UIApplicationMain function at app launch time. The app delegate object's main job is to handle state transitions within the app.
+
+####Q24. How is the app delegate is declared by Xcode project templates?
+
+A. App delegate is declared as a subclass of UIResponder by Xcode project templates.
+
+####Q25. What happens if IApplication object does not handle an event?
+
+A. In such case the event will be dispatched to your app delegate for processing.
+
+####Q26. Which app specific objects store the app's content?
+
+A. Data model objects are app specific objects and store app’s content. Apps can also use document objects to manage some or all of their data model objects.
+
+####Q27. Are document objects required for an application? What does they offer?
+
+A. Document objects are not required but are very useful in grouping data that belongs in a single file or file package.
+
+####Q28. Which object manage the presentation of app's content on the screen?
+
+A. View controller objects takes care of the presentation of app's content on the screen. A view controller is used to manage a single view along with the collection of subviews. It makes its views visible by installing them in the app’s window.
+
+####Q29. Which is the super class of all view controller objects?
+
+A. UIViewController class. The functionality for loading views, presenting them, rotating them in response to device rotations, and several other standard system behaviors are provided by UIViewController class.
+
+####Q30. What is the purpose of UIWindow object?
+
+A. The presentation of one or more views on a screen is coordinated by UIWindow object.
+
+####Q31. How do you change the content of your app in order to change the views displayed in the corresponding window?
+
+A. To change the content of your app, you use a view controller to change the views displayed in the corresponding window. Remember, window itself is never replaced.
+
+####Q32. Define view object.
+
+A. Views along with controls are used to provide visual representation of the app content. View is an object that draws content in a designated rectangular area and it responds to events within that area.
+
+####Q33. You wish to define your custom view. Which class will be subclassed?
+
+A. Custom views can be defined by subclassing UIView.
+
+####Q34. Apart from incorporating views and controls, what else an app can incorporate?
+
+A. Apart from incorporating views and controls, an app can also incorporate Core Animation layers into its view and control hierarchies.
+
+####Q35. What are layer objects and what do they represent?
+
+A. Layer objects are data objects which represent visual content. Layer objects are used by views to render their content. Custom layer objects can also be added to the interface to implement complex animations and other types of sophisticated visual effects.
+
+--
 ####Source: http://www.geekinterview.com/Interview-Questions/iOS
